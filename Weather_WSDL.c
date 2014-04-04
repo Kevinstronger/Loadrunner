@@ -18,9 +18,9 @@ Action()
 		LAST);
 
 	lr_xml_get_values("XML={response}",
-					  "ValueParam=ParamValue_string",
-					  "Query=/Envelope/Body/getSupportCityStringResponse/getSupportCityStringResult/string[10]",
-					  LAST);
+			"ValueParam=ParamValue_string",
+			"Query=/Envelope/Body/getSupportCityStringResponse/getSupportCityStringResult/string[10]",
+			 LAST);
 	lr_output_message(lr_eval_string("{ParamValue_string}"));
 	citystring = lr_eval_string("{ParamValue_string}");
 	stringlen = strlen(citystring)-4;
@@ -43,7 +43,7 @@ Action()
 		END_RESULT,
 		LAST);
 
-    lr_convert_string_encoding(lr_eval_string("{response1}"), LR_ENC_UTF8 , NULL, "result");
+    	lr_convert_string_encoding(lr_eval_string("{response1}"), LR_ENC_UTF8 , NULL, "result");
 	lr_output_message("# 服务器返回的内容为\n%s",lr_eval_string("{result}"));
 	//lr_output_message(lr_eval_string("{response1}"));
 	return 0;
