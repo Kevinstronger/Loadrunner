@@ -33,7 +33,7 @@ Action()
                        "<soap12:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">"
 						   "<soap12:Body>"
 								"<getSupportCityString xmlns=\"http://WebXml.com.cn/\">"
-									"<theRegionCode>涓婃捣</theRegionCode>"//上海UTF-8
+									"<theRegionCode>涓婃捣</theRegionCode>"//上海 UTF-8
 								"</getSupportCityString>"
 							"</soap12:Body>"
 						"</soap12:Envelope>",
